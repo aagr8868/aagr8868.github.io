@@ -2884,7 +2884,7 @@
 
 	#page-wrapper {
 		padding-top: 3em;
-		background-color: #e6e6e6;
+		background-color: #2d7086b2;
 	}
 
 	body.landing #page-wrapper {
@@ -3163,7 +3163,7 @@
 
 	#banner {
 		background-attachment: scroll,							fixed;
-		background-color: #666;
+		background-color: #080061;
 		background-image: url("images/overlay.png"), url("../../images/banner.jpg");
 		background-position: top left,						center center;
 		background-repeat: repeat,							no-repeat;
