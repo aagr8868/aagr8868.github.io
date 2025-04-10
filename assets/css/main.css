@@ -2933,7 +2933,7 @@
 
 	#header {
 		background: #444;
-		color: #bbb;
+		color: black;
 		cursor: default;
 		height: 3.25em;
 		left: 0;
@@ -3061,14 +3061,19 @@
 		}
 
 		#header.alt {
+			position: fixed;
 			-moz-animation: none;
 			-webkit-animation: none;
 			-ms-animation: none;
 			animation: none;
-			background: none;
+			background-color: rgb(74, 74, 74);
 			color: rgba(255, 255, 255, 0.75);
-			position: absolute;
+			
 		}
+
+			li a:hover:not(.active) {
+				background-color: #ffee0091;
+			}
 
 			#header.alt nav > ul > li a:not(.button).icon:before {
 				color: rgba(255, 255, 255, 0.75);
@@ -3096,7 +3101,7 @@
 				#header.alt input[type="reset"]:active,
 				#header.alt input[type="button"]:active,
 				#header.alt .button:active {
-					background-color: rgba(255, 255, 255, 0.2);
+					background-color: rgba(0, 0, 0, 0.2);
 				}
 
 	.dropotron {
