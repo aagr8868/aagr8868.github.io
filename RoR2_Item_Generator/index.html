@@ -1,10 +1,24 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <title>
-            RoR2 Item Generator
-        </title>
+        <title>RoR2 Item Generator</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        
+        <div id="page">
+            <h1>Risk of Rain 2 Item Generator</h1>
+            
+            <label>Number of Players</label>
+            <input id="numPlayers" type="number" value="1" min="1" max="4"/>
+            <button id="refresh">Submit</button>
+        </div>
+        <br>
+        <div id="itemContainer">
+            <table>
+            <tr id = "playerContainer">
+            </tr>
+        </table>
+        </div>
+        <script src="scripts.js"></script>
     </body>
 </html>
