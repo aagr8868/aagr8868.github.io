@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>RoR2 List Items</title>
+</head>
+<body>
+    <h1>All Items</h1>
+    <table id="itemTable" border="1">
+        <tr>
+            <th>Name</th>
+            <th>DLC</th>
+            <th>Rarity</th>
+            <th>Image</th>
+        </tr>
+    </table>
+
+    <script>
+        window.onload = function() {
+            fetch('./Items/items.json')
+                .then(response => response.json())
+                .then(data => {
+                    const table = document.getElementById('itemTable');
+
+                    // Loop over each rarity
+                    Object.keys(data).forEach(rarityKey => {
+                        const items = data[rarityKey]; // array of items
+
+                        items.forEach(item => {
+                            const row = document.createElement('tr');
+
+                            row.innerHTML = `
+                                <td>${item.name}</td>
+                                <td>${item.dlc || ''}</td>
+                                <td>${rarityKey}</td>
+                                <td><img src="${item.image}" alt="${item.name}" width="50"></td>
+                            `;
+
+                            table.appendChild(row);
+                        });
+                    });
+                })
+                .catch(error => console.error('Error loading JSON:', error));
+        };
+    </script>
+
+</body>
+</html>
