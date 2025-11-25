@@ -10,32 +10,28 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<!-- add scripting to website -->
+		<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+		<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		<script src="./scripts/header.js" type="text/babel" defer></script>
 	</head>
 	<body class="is-preload">
 		<div id="page-wrapper">
 
 			<!-- Header -->
-			<header id="header" class="alt">
-				<nav id="nav">
-					<ul>
-						<li><a href="index.html">About Me</a></li>
-						<li><a href="Extracurricular.html">Interests</a></li>
-						<li><a href="Projects.html">Projects</a></li>
-						<li><a href="Resume.html">Resume</a></li>
-						<li><a href="https://github.com/aagr8868"><img src="images/githubIcon_small.png" style="padding-top: 5px;"></a></li>
-						<li><a href="https://www.linkedin.com/in/aarongrissom"><img src="images/linkedinIcon_small.png" style="padding-top: 5px;"></a></li>
-					</ul>
-				</nav>
-			</header>
+			<header id="header" class="alt"></header>
 
 			<!-- Main -->
 				<section id="main" class="container">
 					<header>
 						<h2 style="color:black">Resume</h2>
-						<p style="color: black;"> Below is my resume. I have pulled out some parts of it that I am exceptionaly proud of. </p>
+						<p style="color: black;"> Below is my resume. I have worked very hard toward reciving my computer science degree. I am a self-funded first-generation college graduate.
+							I am excited to start my career in software development and computer science.
+						</p>
 					</header>
 					<div class="box">
-						<span class="image featured"><iframe src="/assets/ContactlessTechnicalResume.pdf" class="image fit" height="300"></iframe></span>
+						<span class="image featured"><embed src="./assets/AaronGrissom_Resume.pdf" width="100%" height="1000px" /></span>
 						<a href="/assets/ContactlessTechnicalResume.pdf" class="button"> Full Screen </a>
 						<br> <hr>
 						<h2>Highlights from my Resume</h2>
@@ -46,6 +42,7 @@
 								<ul style="float: right;">
 									<li> Used Unity to simulate a controlled test environment </li>
 									<li> Created an AI to predict the path of a car in a city to then intercept </li>
+									<li> Trained the AI model using machine learning techniques to improve accuracy </li>
 									<li> Created tracking software to identify specific vehicles in a controlled environment</li>
 								</ul>
 							</div>
