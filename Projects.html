@@ -10,23 +10,17 @@
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
+		<!-- add scripting to website -->
+		<script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+		<script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		<script src="./scripts/header.js" type="text/babel" defer></script>
 	</head>
 	<body class="is-preload">
 		<div id="page-wrapper">
 
 			<!-- Header -->
-			<header id="header" class="alt">
-				<nav id="nav">
-					<ul>
-						<li><a href="index.html">About Me</a></li>
-						<li><a href="Extracurricular.html">Interests</a></li>
-						<li><a href="Projects.html">Projects</a></li>
-						<li><a href="Resume.html">Resume</a></li>
-						<li><a href="https://github.com/aagr8868"><img src="images/githubIcon_small.png" style="padding-top: 5px;"></a></li>
-						<li><a href="https://www.linkedin.com/in/aarongrissom"><img src="images/linkedinIcon_small.png" style="padding-top: 5px;"></a></li>
-					</ul>
-				</nav>
-			</header>
+			<header id="header" class="alt"></header>
 
 			<!-- Main -->
 				<section id="main" class="container">
@@ -47,6 +41,18 @@
 									</tr>
 								</thead>
 								<tbody>
+									<tr>
+										<td>Risk of Rain Shrine of Order Challenge</td>
+										<td>I have done this project a few times. First, I did this using Java, I was able to run it in the terminal.
+											I then rewrote it in javascript so that I can host it on my website. This project is a custom challenge in the game Risk of Rain 2.
+											The challenge is to play the game while only picking up one type of item with each asscociated rarity.
+										</td>
+										<td>
+											<a href="https://github.com/aagr8868/Risk-of-Rain-2-Shrine-of-Order-Challenge" class="button">Java repository</a> <br> <br>
+											<a href="./Shrine" class="button">NodeJS repository</a> <br> <br>
+											<a href="./RoR2_Item_Generator/index.html" class="button">Play the challenge here</a>
+										</td>
+									</tr>
 									<tr>
 										<td>Balatro Hand Simulator</td>
 										<td>A personal project to calculate the average score that of a single hand of Balatro with a standard 52 card deck through simulation. Draw 8 cards then play 5 cards to create a standard poker hand. Score based on standard poker hand type and cards played. Face cards worth 10, numbers worth their value, A worth 11. Poker hands calculated <a href="https://balatrogame.fandom.com/wiki/Poker_Hands?file=BalatroHands.png">here</a> <br> <br> </td>
