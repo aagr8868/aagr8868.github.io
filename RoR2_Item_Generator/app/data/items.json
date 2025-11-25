@@ -1,0 +1,29 @@
+{
+    "white": [
+        {
+            "id": 0,
+            "name": "Sword of Testing",
+            "dlc": "base"
+        },
+        {
+            "id": 1,
+            "name": "SecondSword of Testing",
+            "dlc": "extended base"
+        },
+        {
+            "id": 2,
+            "name": "Another Sword of Testing",
+            "dlc": "extended base"
+        },
+        {
+            "id": 3,
+            "name": "Just a Sword of Testing",
+            "dlc": "extended base"
+        },
+        {
+            "id": 4,
+            "name": "Not a Sword of Testing",
+            "dlc": "extended base"
+        }
+    ]
+}
