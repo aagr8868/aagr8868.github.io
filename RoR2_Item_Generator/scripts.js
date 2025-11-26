@@ -24,7 +24,7 @@ document.getElementById("refresh").onclick = async function () {
 };
 
 async function loadItems() {
-    const response = await fetch("items/items.json");
+    const response = await fetch("Items/items.json");
     return await response.json();
 }
 
