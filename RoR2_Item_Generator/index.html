@@ -5,12 +5,29 @@
         <link rel="stylesheet" type="text/css" href="style.css">
     </head>
     <body>
-        <div id="page">
-            <h1>Risk of Rain 2 Item Generator</h1>
-            
-            <label>Number of Players</label>
-            <input id="numPlayers" type="number" value="1" min="1" max="4"/>
-            <button id="refresh">Submit</button>
+        <div id="header">
+            <div id="banner">
+                <h1>Risk of Rain 2 Item Generator</h1>
+            </div>
+            <div id="ShrineImage">
+                <img src="./icons/Shrine_of_Order.webp" alt="Shrine_of_Order" height="150px">
+            </div>
+                <div id ="form">
+                <label>Number of Players</label>
+                <input id="numPlayers" type="number" value="2" min="1" max="8"/>
+                <button id="refresh">Submit</button>
+            </div>
+        </div>
+        <br>
+        <div id = "DLCFilter">
+            <label>Select DLCs to include:</label><br> <br>
+            <input type="checkbox" id="void" checked>
+            <label for="void"><img src = "./icons/18px-SotV_Icon.webp"> Survivors of the Void</label><br>
+            <input type="checkbox" id="storm" checked>
+            <label for="storm"><img src="./icons/18px-SotS_Icon.webp"> Seekers of the Storm</label><br>
+            <input type="checkbox" id="alloyed" checked>
+            <label for="alloyed"><img src="./icons/18px-AC_Icon.webp"> Alloyed Collective</label><br>
+
         </div>
         <br>
         <div id="itemContainer">
