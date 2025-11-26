@@ -3,6 +3,13 @@ td{
     font-size: medium;
 }
 
+a{
+    color: #66e8ff;
+}
+a.visited{
+    color: #e200e2;
+}
+
 th{
     border-style: solid;
     font-size: large;
