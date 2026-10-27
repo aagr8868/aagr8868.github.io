@@ -3912,3 +3912,75 @@
 			}
 
 	}
+
+/* Resume page */
+.resume-container {
+    padding: 0;
+    overflow: hidden;
+}
+
+.resume-toolbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.resume-toolbar h3 {
+    margin: 0;
+}
+
+.resume-toolbar p {
+    margin: 0.35rem 0 0;
+    color: #777;
+    font-size: 0.9rem;
+}
+
+.resume-actions {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    flex-wrap: wrap;
+}
+
+.resume-actions .button {
+    margin: 0;
+}
+
+.resume-viewer {
+    width: 100%;
+    height: 1000px;
+    background: #e9edf2;
+}
+
+.resume-viewer iframe {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    background: #fff;
+}
+
+@media screen and (max-width: 736px) {
+    .resume-toolbar {
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 1.25rem;
+    }
+
+    .resume-actions {
+        width: 100%;
+    }
+
+    .resume-actions .button {
+        flex: 1;
+        text-align: center;
+    }
+
+    .resume-viewer {
+        height: 75vh;
+        min-height: 500px;
+    }
+}
